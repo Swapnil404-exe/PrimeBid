@@ -25,7 +25,7 @@ export const placeBid = (id, data) => async (dispatch) => {
   dispatch(bidSlice.actions.bidRequest());
   try {
     const response = await axios.post(
-      `https://primebid-cshr.onrender.com/api/v1/bid/place/${id}`,
+      `https://primebid-cshr.onrender.com/v1/bid/place/${id}`,
       data,
       {
         withCredentials: true,

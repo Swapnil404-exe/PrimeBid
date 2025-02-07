@@ -24,7 +24,7 @@ export const postCommissionProof = (data) => async (dispatch) => {
   dispatch(commissionSlice.actions.postCommissionProofRequest());
   try {
     const response = await axios.post(
-      "https://primebid-cshr.onrender.com/api/v1/commission/proof",
+      "https://primebid-cshr.onrender.com/v1/commission/proof",
       data,
       {
         withCredentials: true,
